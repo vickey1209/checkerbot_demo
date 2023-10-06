@@ -1,0 +1,50 @@
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port : \u001b[39m","timestamp":"2023-09-21 12:15:12:581"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port : \u001b[39m","timestamp":"2023-09-21 12:16:56:838"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :undefined \u001b[39m","timestamp":"2023-09-21 12:17:44:057"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-21 12:22:10:494"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-21 13:16:09:895"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-21 13:16:59:414"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-21 14:10:11:980"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-21 14:13:23:226"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mDB connected successfully\u001b[39m","timestamp":"2023-09-21 14:13:23:237"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-21 15:33:39:060"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mDB connected successfully\u001b[39m","timestamp":"2023-09-21 15:33:39:071"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-21 15:35:15:837"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mDB connected successfully\u001b[39m","timestamp":"2023-09-21 15:35:15:848"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-21 15:35:56:799"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mDB connected successfully\u001b[39m","timestamp":"2023-09-21 15:35:56:809"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-22 10:59:22:105"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mredis connected successfully\u001b[39m","timestamp":"2023-09-22 10:59:22:120"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mpub connected \u001b[39m","timestamp":"2023-09-22 10:59:22:121"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msub connected \u001b[39m","timestamp":"2023-09-22 10:59:22:122"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mDB connected successfully\u001b[39m","timestamp":"2023-09-22 10:59:22:130"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-22 13:36:08:694"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mredis connected successfully\u001b[39m","timestamp":"2023-09-22 13:36:08:705"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mpub connected \u001b[39m","timestamp":"2023-09-22 13:36:08:705"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msub connected \u001b[39m","timestamp":"2023-09-22 13:36:08:707"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mDB connected successfully\u001b[39m","timestamp":"2023-09-22 13:36:08:714"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-22 16:59:32:797"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mredis connected successfully\u001b[39m","timestamp":"2023-09-22 16:59:32:808"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mpub connected \u001b[39m","timestamp":"2023-09-22 16:59:32:808"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msub connected \u001b[39m","timestamp":"2023-09-22 16:59:32:809"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mDB connected successfully\u001b[39m","timestamp":"2023-09-22 16:59:32:816"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-22 17:04:46:790"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mredis connected successfully\u001b[39m","timestamp":"2023-09-22 17:04:46:800"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mpub connected \u001b[39m","timestamp":"2023-09-22 17:04:46:801"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msub connected \u001b[39m","timestamp":"2023-09-22 17:04:46:802"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mDB connected successfully\u001b[39m","timestamp":"2023-09-22 17:04:46:810"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-09-22 17:08:37:761"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mredis connected successfully\u001b[39m","timestamp":"2023-09-22 17:08:37:774"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mpub connected \u001b[39m","timestamp":"2023-09-22 17:08:37:775"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msub connected \u001b[39m","timestamp":"2023-09-22 17:08:37:776"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mDB connected successfully\u001b[39m","timestamp":"2023-09-22 17:08:37:785"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-10-06 14:23:59:821"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mredis connected successfully\u001b[39m","timestamp":"2023-10-06 14:23:59:838"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mpub connected \u001b[39m","timestamp":"2023-10-06 14:23:59:839"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msub connected \u001b[39m","timestamp":"2023-10-06 14:23:59:840"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mDB connected successfully\u001b[39m","timestamp":"2023-10-06 14:23:59:850"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port :3000 \u001b[39m","timestamp":"2023-10-06 15:18:01:343"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mredis connected successfully\u001b[39m","timestamp":"2023-10-06 15:18:01:353"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mpub connected \u001b[39m","timestamp":"2023-10-06 15:18:01:354"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msub connected \u001b[39m","timestamp":"2023-10-06 15:18:01:355"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mDB connected successfully\u001b[39m","timestamp":"2023-10-06 15:18:01:365"}
