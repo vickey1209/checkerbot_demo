@@ -9,7 +9,6 @@ const socket_io_1 = require("socket.io");
 const http_1 = __importDefault(require("http"));
 const path_1 = __importDefault(require("path"));
 const dotenv_1 = __importDefault(require("dotenv"));
-// import JoinGameModel from "../src/validation/requestValidation/joinGameValidation"
 const mongoConnection_1 = __importDefault(require("./connection/mongoConnection"));
 const logger_1 = __importDefault(require("./logger"));
 const socketConnection_1 = __importDefault(require("./connection/socketConnection"));

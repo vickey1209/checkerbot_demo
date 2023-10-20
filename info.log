@@ -4533,3 +4533,38 @@
 {"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: MOVE : REQUEST DATA : {\"id\":\"b30\",\"moveId\":\"b39\",\"color\":1,\"userId\":\"296c9e76-e3a1-486a-bc2a-ffb24c4b9db2\"}\u001b[39m","timestamp":"2023-10-20 15:01:51:695"}
 {"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: CHECK_POSSIBILITY : REQUEST DATA : {\"index\":48,\"userId\":\"3966660b-5155-4255-8e0e-77cac5432c1e\",\"color\":2}\u001b[39m","timestamp":"2023-10-20 15:02:00:448"}
 {"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: MOVE : REQUEST DATA : {\"id\":\"b48\",\"moveId\":\"b30\",\"color\":2,\"userId\":\"3966660b-5155-4255-8e0e-77cac5432c1e\",\"kill\":[4,6]}\u001b[39m","timestamp":"2023-10-20 15:02:01:784"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mserver is running on port : 5000\u001b[39m","timestamp":"2023-10-20 16:55:51:107"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mredis connected successfully\u001b[39m","timestamp":"2023-10-20 16:55:51:117"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mredisPub connected successfully \u001b[39m","timestamp":"2023-10-20 16:55:51:118"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mredisSub connected successfully \u001b[39m","timestamp":"2023-10-20 16:55:51:118"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mmongoDB connected successfully\u001b[39m","timestamp":"2023-10-20 16:55:51:134"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mNew connection with socket ID: oOCnxPuiQ6ygOanIAAAC\u001b[39m","timestamp":"2023-10-20 16:55:51:144"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msocket.io connected succesfully\u001b[39m","timestamp":"2023-10-20 16:55:51:144"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mNew connection with socket ID: 529ANia9bFeWJgXTAAAD\u001b[39m","timestamp":"2023-10-20 16:55:51:149"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msocket.io connected succesfully\u001b[39m","timestamp":"2023-10-20 16:55:51:150"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mNew connection with socket ID: 5X1iyNKLvE8vhBhbAAAF\u001b[39m","timestamp":"2023-10-20 16:56:05:466"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msocket.io connected succesfully\u001b[39m","timestamp":"2023-10-20 16:56:05:467"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mNew connection with socket ID: Y8DpjfyvQtoySw-SAAAH\u001b[39m","timestamp":"2023-10-20 16:56:06:997"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msocket.io connected succesfully\u001b[39m","timestamp":"2023-10-20 16:56:06:997"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mNew connection with socket ID: Q6PUYs6b-3A9I6OYAAAJ\u001b[39m","timestamp":"2023-10-20 16:57:20:993"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msocket.io connected succesfully\u001b[39m","timestamp":"2023-10-20 16:57:20:993"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mNew connection with socket ID: FGmIB0s3-d73D6H_AAAL\u001b[39m","timestamp":"2023-10-20 16:57:37:647"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msocket.io connected succesfully\u001b[39m","timestamp":"2023-10-20 16:57:37:647"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mNew connection with socket ID: AvKAyF5y3L6k0R1WAAAN\u001b[39m","timestamp":"2023-10-20 16:57:50:011"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msocket.io connected succesfully\u001b[39m","timestamp":"2023-10-20 16:57:50:013"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: LEAVE : REQUEST DATA : {}\u001b[39m","timestamp":"2023-10-20 16:57:54:630"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mNew connection with socket ID: qpKYmqMaCMUWQ5UgAAAP\u001b[39m","timestamp":"2023-10-20 16:57:54:675"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msocket.io connected succesfully\u001b[39m","timestamp":"2023-10-20 16:57:54:676"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: SIGN_UP : REQUEST DATA : {\"userName\":\"vickey\"}\u001b[39m","timestamp":"2023-10-20 16:58:00:078"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msocket id :-\u001b[39m","timestamp":"2023-10-20 16:58:00:085"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: LEAVE : REQUEST DATA : {}\u001b[39m","timestamp":"2023-10-20 16:58:04:110"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mNew connection with socket ID: FNuDG0FQ_BFdUHJ6AAAR\u001b[39m","timestamp":"2023-10-20 16:58:04:154"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msocket.io connected succesfully\u001b[39m","timestamp":"2023-10-20 16:58:04:154"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: SIGN_UP : REQUEST DATA : {\"userName\":\"vickey1\"}\u001b[39m","timestamp":"2023-10-20 16:58:10:045"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36msocket id :-\u001b[39m","timestamp":"2023-10-20 16:58:10:048"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: CHECK_POSSIBILITY : REQUEST DATA : {\"index\":19,\"userId\":\"c264a7d4-ab76-4c90-ab11-1a42053f39f3\",\"color\":1}\u001b[39m","timestamp":"2023-10-20 16:58:24:934"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: MOVE : REQUEST DATA : {\"id\":\"b19\",\"moveId\":\"b28\",\"color\":1,\"userId\":\"c264a7d4-ab76-4c90-ab11-1a42053f39f3\"}\u001b[39m","timestamp":"2023-10-20 16:58:25:493"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: CHECK_POSSIBILITY : REQUEST DATA : {\"index\":44,\"userId\":\"0b30dac0-18c6-4ec0-8e1c-711dd9e58eba\",\"color\":2}\u001b[39m","timestamp":"2023-10-20 16:58:31:109"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: MOVE : REQUEST DATA : {\"id\":\"b44\",\"moveId\":\"b35\",\"color\":2,\"userId\":\"0b30dac0-18c6-4ec0-8e1c-711dd9e58eba\"}\u001b[39m","timestamp":"2023-10-20 16:58:34:773"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: CHECK_POSSIBILITY : REQUEST DATA : {\"index\":10,\"userId\":\"c264a7d4-ab76-4c90-ab11-1a42053f39f3\",\"color\":1}\u001b[39m","timestamp":"2023-10-20 16:58:38:974"}
+{"level":"\u001b[36minfo\u001b[39m","message":"\u001b[36mREQUEST EVENT NAME: MOVE : REQUEST DATA : {\"id\":\"b10\",\"moveId\":\"b19\",\"color\":1,\"userId\":\"c264a7d4-ab76-4c90-ab11-1a42053f39f3\"}\u001b[39m","timestamp":"2023-10-20 16:58:39:349"}
