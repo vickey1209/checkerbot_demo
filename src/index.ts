@@ -1,19 +1,21 @@
-
 import express, { Request, Response } from "express";
 import { Server } from "socket.io";
 import http from "http";
 import path from "path";
 import dotenv from 'dotenv';
-dotenv.config({path:'./.env'});
+// import JoinGameModel from "../src/validation/requestValidation/joinGameValidation"
+import connectDB from "./connection/mongoConnection"
 import logger from "./logger";
-import {connectDB} from "./connections/dbConnection";
-import socketConnection from "./connections/socketConnection";
-import User from "./model/user";
-import Playing from "./model/playing";
+import socketConnection from "./connection/socketConnection";
+dotenv.config({path:'./.env'});
+const DATABASE_URL = process.env.DATABASE_URL
+
+
+//databse connection
+connectDB(DATABASE_URL)
 
 
 const app = express();
-const DATABASE_URL = process.env.MONGO_URL
 const httpServer = http.createServer(app);
 const io: Server = new Server(httpServer, {
   cors:
@@ -24,30 +26,16 @@ const io: Server = new Server(httpServer, {
 });
 socketConnection(); 
 
-
-
-
-
-if (!DATABASE_URL) {
-    throw new Error("DATABASE_URL is not defined");
-  }
-
-//database connection
-connectDB(DATABASE_URL)
-
-
-
-app.use(express.static(path.join(__dirname, "./views")));
+app.use(express.static(path.join(__dirname, "./view")));
 
 app.get("/", (req: Request, res: Response) => {
-  res.sendFile(path.join(__dirname, "./views/checker.html"));
+  res.sendFile(path.join(__dirname, "./view/game.html"));
 });
 
-let port=process.env.PORT;
+const port = process.env.SERVER_PORT;
+httpServer.listen(port,()=>{
+   logger.info(`server is running on port : ${port}`)
+})
 
-httpServer.listen(port, () => {
-  logger.info(`server is running on port :${port} `)
-});
 
 export  {io}
-
