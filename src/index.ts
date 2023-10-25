@@ -6,7 +6,6 @@ import { EVENT_NAME } from '../src/constants';
 import dotenv from 'dotenv';
 
 import { joinGameValidation } from "./validation/requestValidation";
-import connectDB from "./connection/mongoConnection"
 import logger from "./logger";
 import socketConnection from "./connection/socketConnection";
 import { constants } from "buffer";
@@ -14,8 +13,6 @@ dotenv.config({path:'./.env'});
 const DATABASE_URL = process.env.DATABASE_URL
 
 
-//databse connection
-connectDB(DATABASE_URL)
 
 
 const app = express();

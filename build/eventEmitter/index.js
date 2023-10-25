@@ -6,12 +6,12 @@ const __1 = require("..");
 const logger_1 = __importDefault(require("../logger"));
 class Event {
     sendToSocket(socketId, data) {
-        // logger.info(`sendToSocket : RESPONSE EVENT NAME : ${data.eventName} : RESPONSE DATA : ${JSON.stringify(data.data)}`)
+        logger_1.default.info(`sendToSocket : RESPONSE EVENT NAME : ${data.eventName} : RESPONSE DATA : ${JSON.stringify(data.data)}`);
         __1.io.to(socketId).emit(data.eventName, data);
         logger_1.default.info("socket id :-", socketId);
     }
     sendToRoom(tableId, data) {
-        // logger.info(`sendToRoom : RESPONSE EVENT NAME : ${data.eventName} : RESPONSE DATA : ${JSON.stringify(data.data)}`);
+        logger_1.default.info(`sendToRoom : RESPONSE EVENT NAME : ${data.eventName} : RESPONSE DATA : ${JSON.stringify(data.data)}`);
         __1.io.to(tableId).emit(data.eventName, data);
     }
 }

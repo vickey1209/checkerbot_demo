@@ -110,7 +110,7 @@ function sinUp(data) {
 
 function joinGame(data) {
   if (data.status == "waiting")  {
-   count.innerHTML = `
+    $(" #gameInfoBox").html( `
     
     <div class="waiting_content">
       <div class="center">
@@ -126,7 +126,7 @@ function joinGame(data) {
         <div class="wave"></div>
       </div>
       <h2>waiting for other player...</h2>
-    </div>`;
+    </div>`);
   } else {
     window.sessionStorage.setItem("tableId",data.tableId);
     console.log("------------------------------->",userId);

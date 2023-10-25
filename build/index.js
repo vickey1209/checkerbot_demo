@@ -9,13 +9,10 @@ const socket_io_1 = require("socket.io");
 const http_1 = __importDefault(require("http"));
 const path_1 = __importDefault(require("path"));
 const dotenv_1 = __importDefault(require("dotenv"));
-const mongoConnection_1 = __importDefault(require("./connection/mongoConnection"));
 const logger_1 = __importDefault(require("./logger"));
 const socketConnection_1 = __importDefault(require("./connection/socketConnection"));
 dotenv_1.default.config({ path: './.env' });
 const DATABASE_URL = process.env.DATABASE_URL;
-//databse connection
-(0, mongoConnection_1.default)(DATABASE_URL);
 const app = (0, express_1.default)();
 const httpServer = http_1.default.createServer(app);
 const io = new socket_io_1.Server(httpServer, {

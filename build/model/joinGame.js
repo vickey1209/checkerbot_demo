@@ -23,20 +23,21 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.JoinGameModel = void 0;
 const mongoose_1 = __importStar(require("mongoose"));
 const constants_1 = require("../constants");
 const joinGameSchema = new mongoose_1.Schema({
     eventName: {
         type: String,
-        required: true,
         enum: [constants_1.EVENT_NAME.JOIN_GAME, constants_1.EVENT_NAME.SIGN_UP],
+        required: true
     },
     data: {
         userName: {
             type: String,
-            required: true,
-        },
-    },
+            required: true
+        }
+    }
 });
-const JoinGameModel = mongoose_1.default.model('JoinGame', joinGameSchema);
-exports.default = JoinGameModel;
+const JoinGameModel = mongoose_1.default.model('JoinGam', joinGameSchema);
+exports.JoinGameModel = JoinGameModel;
