@@ -110,7 +110,7 @@ function sinUp(data) {
 
 function joinGame(data) {
   if (data.status == "waiting")  {
-    $(" #gameInfoBox").html( `
+    $("#gameInfoBox").html( `
     
     <div class="waiting_content">
       <div class="center">
@@ -224,18 +224,26 @@ function userTurnStart(data) {
   }
 }
 
+
 function winGame(data) {
-  if (data.winnerId == userId) {
-    $("#gameInfoBox").addClass('win-box');
+  let winnerId = data.winnerId;
+
+  if (winnerId == userId) {
+    console.log("winner------------------------------>",winnerId);
+    $("#gameInfoBox").addClass("win-box");
     $("#gameInfoBox").html(`<img src="./image/win.png" alt="">`);
     window.sessionStorage.clear();
   } else {
-    $("#gameInfoBox").addClass('lose-box');
-
-    $("#gameInfoBox").html(`<img src="./image/lose copy.png" alt="">`);
+    console.log("looser------------------------------>",userId);
+    $("#gameInfoBox").addClass("lose-box");
+    $("#gameInfoBox").html(`<img src="./image/lose.png" alt="">`);
+    window.sessionStorage.clear();
   }
+
   $(" #gameInfoBox").removeClass("d-none");
   $(" #gameInfoBox").removeClass("hide");
+
+
 
   setTimeout(() => {
     $("#gameInfoBox").removeClass("win-box");
@@ -254,19 +262,19 @@ function winGame(data) {
                 <input class="button-63 " type="submit" value="Play">
               </div>
             
-        </div>
+        </div>s
     </div>
 </form>`);
-    submitEvent();
-    $('#playerName').html('-');
-    $('#playerName').removeClass('playerActive');
-    $('#animeName').removeClass('playerActive');
-    $("#animeName").html('-');
-    $("#animeScore").html(`<img src="./image/red_king.png" alt=""><p>0</p>`)
-    $("#playerScore").html(`<img src="./image/red_king.png" alt=""><p>0</p>`)
-  }, 5000);
-
+submitEvent();
+$('#playerName').html('-');
+$('#playerName').removeClass('playerActive');
+$('#animeName').removeClass('playerActive');
+$("#animeName").html('-');
+$("#animeScore").html(`<img src="./image/red_king.png" alt=""><p>0</p>`)
+$("#playerScore").html(`<img src="./image/red_king.png" alt=""><p>0</p>`)
+}, 5000);
 }
+
 
 function gameStart(data) {
   $(" #gameInfoBox").html('<div class="timeSecond">Good Luck</div>');
