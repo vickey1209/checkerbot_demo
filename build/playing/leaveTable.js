@@ -28,11 +28,12 @@ function leaveTable(data, socket) {
                 let winData = {
                     eventName: constants_1.EVENT_NAME.WIN,
                     data: {
-                        winnerId: (tableData.player[0]._id == data.userId) ? tableData.player[1]._id : tableData.player[0]._id
+                        winnerId: (tableData.player[1]._id == data.userId) ? tableData.player[0]._id : tableData.player[1]._id
                     }
                 };
                 eventEmitter_1.default.sendToRoom(tableData._id, winData);
                 (0, _1.disconnect)(socket.tableId);
+                console.log("players win data", tableData);
             }
         }
         catch (error) {

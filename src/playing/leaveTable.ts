@@ -14,11 +14,13 @@ export async function leaveTable(data:{userId:string},socket:any){
                 let winData={
                     eventName:EVENT_NAME.WIN,
                     data:{
-                        winnerId:(tableData.player[0]._id==data.userId)?tableData.player[1]._id:tableData.player[0]._id
+                        winnerId:(tableData.player[1]._id==data.userId)?tableData.player[0]._id:tableData.player[1]._id
                     }
                 }
                 Event.sendToRoom(tableData._id,winData);
                 disconnect(socket.tableId);
+                console.log("players win data" , tableData);
+                
         }
     } catch (error) {
         logger.error(`CATCH ERROR IN liveTable : ${error}`)

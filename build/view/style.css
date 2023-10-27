@@ -218,10 +218,12 @@
   }
 }
 .win-box {
-  background: linear-gradient(180deg, #040033 0%, #1D0157 100%) !important;
+  /* background: linear-gradient(180deg, #040033 0%, #1D0157 100%) !important; */
+  background: green !important;
 }
 .lose-box {
-  background: linear-gradient(180deg, #040033 0%, #1D0157 100%) !important;
+  /* background: linear-gradient(180deg, #040033 0%, #1D0157 100%) !important; */
+  background: red!important;
 }
 /* .scoreBox{
   padding: 5px;

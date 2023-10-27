@@ -5,9 +5,10 @@ let color;
 let turn;
 
 let sessionTableId= window.sessionStorage.getItem("tableId");
-console.log('sessionTableId', sessionTableId)
+
 let sessionUserId= window.sessionStorage.getItem("userId");
-console.log('sessionUserId', sessionUserId)
+
+
 if(sessionTableId&& sessionUserId){
   $("#gameInfoBox").addClass("d-none");
   let signupData={
@@ -19,6 +20,8 @@ if(sessionTableId&& sessionUserId){
   }
   sendToSocket(socket,signupData);
 }
+// console.log("userid=",data);
+console.log("userid=",tableId);
 
 function submitEvent() {
   $("form").submit((e) => {
@@ -30,6 +33,7 @@ function submitEvent() {
         userName: userName,
       },
     };
+    
     sendToSocket(socket, signupData);
     $("form").addClass().addClass("hide");
     setTimeout(() => {
@@ -208,7 +212,8 @@ function roundTimer(data) {
 }
 
 function userTurnStart(data) {
-  if (data.userId == userId) {
+  let userId = data.userId
+  if (userId == userId) {
     turn = true;
     if (turn) {
       $("#playerName").addClass("playerActive");
@@ -226,18 +231,25 @@ function userTurnStart(data) {
 
 
 function winGame(data) {
+  $(" #gameInfoBox").add('show')
+  // $(" #gameInfoBox").innerHTML = `<div class="win-box"></div>`;
   let winnerId = data.winnerId;
 
   if (winnerId == userId) {
+   
     console.log("winner------------------------------>",winnerId);
     $("#gameInfoBox").addClass("win-box");
+    $(" #gameInfoBox").innerHTML = `<div class="win-box"></div>`;
     $("#gameInfoBox").html(`<img src="./image/win.png" alt="">`);
-    window.sessionStorage.clear();
+    
   } else {
     console.log("looser------------------------------>",userId);
     $("#gameInfoBox").addClass("lose-box");
+
+    console.log("looser---fsdss--------------------------->",userId);
     $("#gameInfoBox").html(`<img src="./image/lose.png" alt="">`);
-    window.sessionStorage.clear();
+    console.log("looser--ddddddd---------------------------->",userId);
+  
   }
 
   $(" #gameInfoBox").removeClass("d-none");
@@ -272,7 +284,7 @@ $('#animeName').removeClass('playerActive');
 $("#animeName").html('-');
 $("#animeScore").html(`<img src="./image/red_king.png" alt=""><p>0</p>`)
 $("#playerScore").html(`<img src="./image/red_king.png" alt=""><p>0</p>`)
-}, 5000);
+}, 10000);
 }
 
 
