@@ -1,16 +1,33 @@
 import { v4 as uuidv4 } from "uuid";
 
-const setUser = (userName: string, socketId: string) => {
+
+  export function setUser(data: { userName: string, socketId: string, isBot: boolean}) {
+    try {
+      console.log("cccccccccccccccccc",data);
+      
+      const { userName, socketId, isBot} = data
+      return {
+        _id: uuidv4(),
+        name: data.userName,
+        socketId: socketId,
+        isBot:isBot, 
+      };
+  } catch (error) {
+    console.log('setUser ERROR', error);
+   
+  }
+}
+
+
+
+
+
+
+export const setTable = (userData: any) => {
+  console.log('tableFormat userData', userData)
   return {
     _id: uuidv4(),
-    userName: userName,
-    socketId: socketId,
-  };
-};
-const setTable = (userData: any,turnId:string) => {
-  return {
-    _id: uuidv4(),
-    activePlayer: 1,
+    activePlayer: 0,
     maxPlayer: 2,
     board: [
       [1, 0, 1, 0, 1, 0, 1, 0],
@@ -22,10 +39,13 @@ const setTable = (userData: any,turnId:string) => {
       [2, 0, 2, 0, 2, 0, 2, 0],
       [0, 2, 0, 2, 0, 2, 0, 2],
     ],
-    player: [userData],
+    playerInfo: [userData],
     status: "waiting",
     playerScore:[0,0],
-    turnId:turnId
+    currentTurn:null,
+    currentTurnSI:-1,
+    
   };
 };
-export { setUser, setTable };
+// export { setUser, setTable};
+

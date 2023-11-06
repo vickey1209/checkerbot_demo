@@ -4,7 +4,7 @@ import Event from "../eventEmitter";
 import logger from "../logger";
 import { disconnect } from "./";
 import { moveValidation } from "../validation/requestValidation";
-import { ResMoveValidation,userTurnStartValidation, winValidation } from "../validation/responseValidation";
+import { ResMoveValidation, winValidation } from "../validation/responseValidation";
 const move = async (data: any, socket: any) => {
   try {
     data = await moveValidation(data);
@@ -88,8 +88,8 @@ const move = async (data: any, socket: any) => {
               userId:turnId,
             },
           };
-          let validateUserTurnData=await userTurnStartValidation(userTurnStartData);
-          await Event.sendToRoom(tableData._id, validateUserTurnData);
+          // let validateUserTurnData=await userTurnStartValidation(userTurnStartData);
+          // await Event.sendToRoom(tableData._id, validateUserTurnData);
         }
       }
     }

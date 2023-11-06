@@ -12,16 +12,49 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.Del = exports.Set = exports.Get = void 0;
 const redisConnection_1 = require("../connection/redisConnection");
 const Get = (key) => __awaiter(void 0, void 0, void 0, function* () {
-    let data = yield redisConnection_1.redis.get(key);
-    data = (data) ? JSON.parse(data) : null;
-    return data;
+    try {
+        console.log('key=================', key);
+        let data = yield redisConnection_1.redis.get(key);
+        console.log('redis getData', data);
+        data = (data) ? JSON.parse(data) : null;
+        if (data) {
+            return data;
+        }
+        else {
+            return false;
+        }
+    }
+    catch (error) {
+        console.error(`Error in Get function: ${error}`);
+        return null;
+    }
 });
 exports.Get = Get;
+// const Set = async (key: string, data: any) => {
+//     try {
+//         return await redis.set(key, JSON.stringify(data));
+//     } catch (error) {
+//         console.error(`Error in Set function: ${error}`);
+//         return false; 
+//     }
+// };
 const Set = (key, data) => __awaiter(void 0, void 0, void 0, function* () {
-    return yield redisConnection_1.redis.set(key, JSON.stringify(data));
+    try {
+        console.log('set data ================>>', data);
+        return yield redisConnection_1.redis.set(key, JSON.stringify(data));
+    }
+    catch (error) {
+        console.log('redis operation set ERROR', error);
+    }
 });
 exports.Set = Set;
 const Del = (key) => __awaiter(void 0, void 0, void 0, function* () {
-    return yield redisConnection_1.redis.del(key);
+    try {
+        return yield redisConnection_1.redis.del(key);
+    }
+    catch (error) {
+        console.error(`Error in Del function: ${error}`);
+        return false;
+    }
 });
 exports.Del = Del;

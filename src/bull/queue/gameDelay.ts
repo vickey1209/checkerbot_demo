@@ -7,7 +7,7 @@ import logger from '../../logger';
 import { GameDelayInterface } from '../../interface/otherInterface';
 dotenv.config({path:'../../../.env'});
 
-const delayGame =async (data:GameDelayInterface)=>{
+export const delayGame =async (data:GameDelayInterface)=>{
     try {
         let redisOption:any={
             port:process.env.REDIS_PORT,
@@ -44,4 +44,3 @@ const delayGame =async (data:GameDelayInterface)=>{
         logger.error(`CATCH ERROR IN delayGame : ${error}`);
     }
 }
-export default delayGame;

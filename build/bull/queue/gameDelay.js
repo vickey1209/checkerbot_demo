@@ -12,6 +12,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.delayGame = void 0;
 const bull_1 = __importDefault(require("bull"));
 const constants_1 = require("../../constants");
 const dotenv_1 = __importDefault(require("dotenv"));
@@ -55,4 +56,4 @@ const delayGame = (data) => __awaiter(void 0, void 0, void 0, function* () {
         logger_1.default.error(`CATCH ERROR IN delayGame : ${error}`);
     }
 });
-exports.default = delayGame;
+exports.delayGame = delayGame;

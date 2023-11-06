@@ -91,8 +91,8 @@ const move = (data, socket) => __awaiter(void 0, void 0, void 0, function* () {
                             userId: turnId,
                         },
                     };
-                    let validateUserTurnData = yield (0, responseValidation_1.userTurnStartValidation)(userTurnStartData);
-                    yield eventEmitter_1.default.sendToRoom(tableData._id, validateUserTurnData);
+                    // let validateUserTurnData=await userTurnStartValidation(userTurnStartData);
+                    // await Event.sendToRoom(tableData._id, validateUserTurnData);
                 }
             }
         }

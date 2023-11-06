@@ -15,8 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const bull_1 = __importDefault(require("bull"));
 const constants_1 = require("../../constants");
 const dotenv_1 = __importDefault(require("dotenv"));
-const eventEmitter_1 = __importDefault(require("../../eventEmitter"));
-const responseValidation_1 = require("../../validation/responseValidation");
+// import { userTurnStartValidation } from '../../validation/responseValidation';
 const logger_1 = __importDefault(require("../../logger"));
 const redisOperation_1 = require("../../redisOperation");
 dotenv_1.default.config({ path: "../../../.env" });
@@ -36,14 +35,14 @@ const turnDelay = (data) => __awaiter(void 0, void 0, void 0, function* () {
         yield turnDelayQueue.add(data, option);
         yield turnDelayQueue.process((job) => __awaiter(void 0, void 0, void 0, function* () {
             let tableData = yield (0, redisOperation_1.Get)(`${constants_1.REDIS_KEY.REDIS_TABLE}:${job.data.jobId}`);
-            let userTurnStartData = {
-                eventName: constants_1.EVENT_NAME.USER_TURN_START,
-                data: {
-                    userId: tableData.turnId,
-                }
-            };
-            let validateUserTurnStartData = yield (0, responseValidation_1.userTurnStartValidation)(userTurnStartData);
-            yield eventEmitter_1.default.sendToRoom(job.data.jobId, validateUserTurnStartData);
+            // let userTurnStartData={
+            //     eventName:EVENT_NAME.USER_TURN_START,
+            //     data:{
+            //         userId:tableData.turnId,
+            //     }
+            // }
+            // let validateUserTurnStartData=await userTurnStartValidation(userTurnStartData)
+            // await Event.sendToRoom(job.data.jobId,validateUserTurnStartData);
         }));
     }
     catch (error) {

@@ -1,3 +1,3 @@
-import delayGame from "./queue/gameDelay";
+import queue from './queue'
 
-export {delayGame};
+export = {addJob:queue}

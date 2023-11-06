@@ -31,8 +31,12 @@ function submitEvent() {
       eventName: "SIGN_UP",
       data: {
         userName: userName,
-      },
+        isBot: false
+      }
     };
+    // Further code goes here, if needed.
+  
+
     
     sendToSocket(socket, signupData);
     $("form").addClass().addClass("hide");
@@ -104,7 +108,16 @@ function setDiceEvent() {
   });
 }
 
+
+
+
+
+
+
+
+
 function sinUp(data) {
+  console.log('signUpGame data :: >>', data)
   userId = data.userId;
   window.sessionStorage.setItem("userId",userId);
   if(color && color==1){
@@ -131,17 +144,20 @@ function joinGame(data) {
       </div>
       <h2>waiting for other player...</h2>
     </div>`);
+    // document.getElementById('userName').innerHTML = data.playerInfo[0].name
   } else {
     window.sessionStorage.setItem("tableId",data.tableId);
+    console.log("join tabl;e user data================> ",data);
     console.log("------------------------------->",userId);
-    if (data.userData[0]._id == userId) {
+
+    if (data.userData[0]._id == data.userId) {
       color = 1;
-      $("#playerName").html(data.userData[0].userName);
-      $("#animeName").html(data.userData[1].userName);
+      $("#playerName").html(data.userData[0]._id);
+      $("#animeName").html(data.userData[1]._id);
     } else {
       color = 2;
-      $("#playerName").html(data.userData[1].userName);
-      $("#animeName").html(data.userData[0].userName);
+      $("#playerName").html(data.userData[1]._id);
+      $("#animeName").html(data.userData[0]._id);
     }
     setBoard(data);
   }
@@ -213,6 +229,8 @@ function roundTimer(data) {
 
 function userTurnStart(data) {
   let userId = data.userId
+  console.log('userTurnStarted data :: >>', data)
+  console.log('join vvvvvv userId :: >>', userId)
   if (userId == userId) {
     turn = true;
     if (turn) {
@@ -231,18 +249,18 @@ function userTurnStart(data) {
 
 
 function winGame(data) {
-  $(" #gameInfoBox").add('show')
-  // $(" #gameInfoBox").innerHTML = `<div class="win-box"></div>`;
+  $(" #gameInfoBox").addClass('show')
+ 
   let winnerId = data.winnerId;
 
   if (winnerId == userId) {
    
     console.log("winner------------------------------>",winnerId);
     $("#gameInfoBox").addClass("win-box");
-    $(" #gameInfoBox").innerHTML = `<div class="win-box"></div>`;
     $("#gameInfoBox").html(`<img src="./image/win.png" alt="">`);
-    
-  } else {
+    $("#board").hide();
+  }
+   else {
     console.log("looser------------------------------>",userId);
     $("#gameInfoBox").addClass("lose-box");
 
@@ -254,6 +272,7 @@ function winGame(data) {
 
   $(" #gameInfoBox").removeClass("d-none");
   $(" #gameInfoBox").removeClass("hide");
+  
 
 
 
@@ -288,7 +307,12 @@ $("#playerScore").html(`<img src="./image/red_king.png" alt=""><p>0</p>`)
 }
 
 
+
+
 function gameStart(data) {
+
+  socket.emit('SIGNUP', { userName, isBot: false })
+
   $(" #gameInfoBox").html('<div class="timeSecond">Good Luck</div>');
 
   setTimeout(() => {

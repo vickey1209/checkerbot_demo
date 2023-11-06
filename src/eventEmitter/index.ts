@@ -12,6 +12,8 @@ class Event{
    
     
     sendToRoom(tableId:string,data:any){
+        console.log('sendToRoom data :: >>', data)
+        console.log('sendToRoom tableId :: >>', tableId)
         logger.info(`sendToRoom : RESPONSE EVENT NAME : ${data.eventName} : RESPONSE DATA : ${JSON.stringify(data.data)}`);
         io.to(tableId).emit(data.eventName,data);
     }

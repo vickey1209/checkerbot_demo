@@ -9,11 +9,15 @@ const playing_1 = require("../playing/");
 const signUp_1 = require("../signUp");
 const handleEvent = (socket) => {
     socket.onAny((eventName, data) => {
+        console.log('eventHandle data :: >>', data);
+        console.log('eventName', eventName);
         logger_1.default.info(`REQUEST EVENT NAME: ${eventName} : REQUEST DATA : ${JSON.stringify(data.data)}`);
         switch (eventName) {
             case constants_1.EVENT_NAME.SIGN_UP:
                 (0, signUp_1.signUp)(data, socket);
                 break;
+            case constants_1.EVENT_NAME.JOIN_GAME:
+                (0, playing_1.joinGame)(data, socket);
             case constants_1.EVENT_NAME.CHECK_POSSIBILITY:
                 (0, playing_1.checkPOssibility)(data, socket);
                 break;

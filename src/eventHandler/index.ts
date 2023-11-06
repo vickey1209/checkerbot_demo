@@ -6,11 +6,15 @@ import { signUp } from "../signUp";
  
 const handleEvent=(socket:Socket)=>{
     socket.onAny((eventName:string,data:any)=>{
+        console.log('eventHandle data :: >>', data)
+        console.log('eventName', eventName)
         logger.info(`REQUEST EVENT NAME: ${eventName} : REQUEST DATA : ${JSON.stringify(data.data)}`);
         switch(eventName){
             case EVENT_NAME.SIGN_UP:
                 signUp(data,socket);
             break;
+            case EVENT_NAME.JOIN_GAME:
+                joinGame(data,socket);
             case EVENT_NAME.CHECK_POSSIBILITY:
                 checkPOssibility(data,socket);
             break;
